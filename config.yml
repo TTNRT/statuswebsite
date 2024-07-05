@@ -85,10 +85,6 @@ params:
       category: US East
       link: https://matrix.ttnrtsite.me
       description: Our IRC chatting site!
-    - name: TTVerify
-      category: Other Services
-      link: https://verify.ttnrtsite.me
-      description: A bot to verify you.
   dateFormat: January 2, 2006 at 3:04 PM UTC
   brand: "#0a0c0f"
   enableLastMod: true
@@ -108,12 +104,12 @@ params:
     - name: US East
       description: The main site in South Carolina
       closed: false
-    - name: Other Services
-      description: Separate services we have hosted
-      closed: true
     - name: US Midwest
       description: The second site in Michigan
       closed: false
+    - name: Other Services
+      description: Separate services we have hosted
+      closed: true
   description: Check for any outages or issues here!
   enableCustomHTML: true
   useLargeHeaderDesign: false
