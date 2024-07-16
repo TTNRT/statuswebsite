@@ -37,12 +37,6 @@ params:
   shortDateFormat: 15:04 UTC — Jan 2
   down: "#e60000"
   systems:
-    - name: East Proxy
-      category: US East
-      description: Proxy server for US East
-    - name: Midwest Proxy
-      category: US Midwest
-      description: Proxy server for US Midwest
     - name: Mastodon
       category: US East
       link: https://social.ttnrtsite.me
@@ -69,22 +63,10 @@ params:
     - name: TTGuard
       category: Other Services
       description: Guard your Discord server!
-    - name: TTCloud
-      category: US Midwest
-      description: Sharing files made easier
-      link: https://cloud.ttnrtsite.me
-    - name: Meli
-      category: US East
-      description: Host your static sites
-      link: https://ttnrtsite.io
     - name: API
       category: US Midwest
       description: Used for accessing the TTNRT API
       link: https://api.ttnrtsite.me/
-    - name: IRC
-      category: US East
-      link: https://matrix.ttnrtsite.me
-      description: Our IRC chatting site!
   dateFormat: January 2, 2006 at 3:04 PM UTC
   brand: "#0a0c0f"
   enableLastMod: true
