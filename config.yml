@@ -51,7 +51,7 @@ params:
       description: Content Delivery Network
     - name: TTWeb
       category: US East
-      link: https://www.ttnrtsite.me
+      link: https://ttnrtsite.me
       description: Our default website
     - name: STVRadio
       category: Other Services
@@ -67,6 +67,10 @@ params:
       category: US Midwest
       description: Used for accessing the TTNRT API
       link: https://api.ttnrtsite.me/
+    - name: TTNRT ID
+      category: US East
+      description: Account login with OpenID
+      link: https://auth.ttnrtsite.me/
   dateFormat: January 2, 2006 at 3:04 PM UTC
   brand: "#0a0c0f"
   enableLastMod: true
@@ -93,6 +97,5 @@ params:
       description: Separate services we have hosted
       closed: true
   description: Check for any outages or issues here!
-  enableCustomHTML: true
   useLargeHeaderDesign: false
 enableCustomHTML: true
