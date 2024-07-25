@@ -57,17 +57,17 @@ params:
       category: Other Services
       description: Listening to music
     - name: AssistAI
-      category: Other Services
-      description: Use AI on Discord!
+      category: US Midwest
+      description: A powerful AI assistant
       link: https://assist.ttnrtsite.me
-    - name: TTGuard
-      category: Other Services
-      description: Guard your Discord server!
+    - name: TTPages
+      description: Static pages server
+      category: US Midwest
     - name: API
       category: US Midwest
       description: Used for accessing the TTNRT API
       link: https://api.ttnrtsite.me/
-    - name: TTNRT ID
+    - name: TTAuth
       category: US East
       description: Account login with OpenID
       link: https://auth.ttnrtsite.me/
