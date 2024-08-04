@@ -21,3 +21,5 @@ severity: down
 *﻿Summary*
 
 [﻿August 3rd, 2024 at 4:01 PM] - The moving has begun! Expect downtime to all services on site!
+
+[﻿August 4th, 2024 at 6:50 AM] - An internet connection issue has arisen at the new place. Unfortunately, this requires a technician to investigate what's going on. This will take place on Monday, between 1 and 2 PM. We will try to get more information as soon as we can.
