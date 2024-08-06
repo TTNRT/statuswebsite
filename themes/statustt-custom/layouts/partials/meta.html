@@ -9,6 +9,7 @@
     <meta name="description" content="{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description | markdownify | plainify }}{{ end }}">
     <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} | {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="icon" type="image/x-icon" href="/logo.png">
     {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}

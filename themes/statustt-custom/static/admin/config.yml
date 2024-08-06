@@ -53,12 +53,12 @@ collections:
     fields:
       - {label: "Mark as incident", name: "section", widget: "hidden", default: "issue"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Start date & time (your time) ⌚", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ss.SSS-04:00"}
+      - {label: "Start date & time (your time) ⌚", name: "date", widget: "datetime"}
       - {label: "Mark as resolved ✔", name: "resolved", widget: "boolean", required: false, default: false}
       - {label: "Hide this from the site (make it a draft) 👀", name: "draft", widget: "boolean", required: false, default: false}
       - {label: "Mark as informational ℹ", name: "informational", widget: "boolean", required: false, default: false}
       - {label: "Pin to top of page", name: "pin", widget: "boolean", required: false, default: false}
-      - {label: "End date & time (your time) ⌛", name: "resolvedWhen", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ss.SSS-04:00", required: false}
+      - {label: "End date & time (your time) ⌛", name: "resolvedWhen", widget: "datetime", required: false}
       - label: "Affected systems (use exact name, separated by commas) 🧐"
         name: "affected"
         widget: "list"
