@@ -38,7 +38,7 @@ params:
   down: "#e60000"
   systems:
     - name: TTGit
-      category: US East
+      category: US Midwest
       link: https://git.ttnrtsite.me
       description: Hosting your code!
     - name: CDN
@@ -46,7 +46,7 @@ params:
       link: https://cdn.ttnrtsite.me
       description: Content Delivery Network
     - name: TTWeb
-      category: US East
+      category: US Midwest
       link: https://ttnrtsite.me
       description: Our default website
     - name: STVRadio
