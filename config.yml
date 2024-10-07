@@ -42,7 +42,7 @@ params:
       link: https://git.ttnrtsite.me
       description: Hosting your code!
     - name: CDN
-      category: US East
+      category: US Midwest
       link: https://cdn.ttnrtsite.me
       description: Content Delivery Network
     - name: TTWeb
@@ -79,9 +79,6 @@ params:
   disableIncidentHistory: false
   ok: "#008000"
   categories:
-    - name: US East
-      description: The main site in South Carolina
-      closed: false
     - name: US Midwest
       description: The second site in Michigan
       closed: false
