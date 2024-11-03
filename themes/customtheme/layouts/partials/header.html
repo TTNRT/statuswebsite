@@ -1,0 +1,16 @@
+{{ if .Site.Params.enableCustomHTML }}
+  {{ partial "custom/above-header" . }}
+{{ end }}
+
+<div class="header header--large">
+  <div class="contain contain--more center">
+    <a href="{{ .Site.BaseURL }}" class="header__logo">
+        <img src="/logo.png" alt="{{ .Site.Title }}">
+        <h1>{{ .Site.Title }}</h1>
+    </a>
+  </div>
+</div>
+
+{{ if .Site.Params.enableCustomHTML }}
+  {{ partial "custom/below-header" . }}
+{{ end }}

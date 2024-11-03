@@ -1,0 +1,33 @@
+{{ if .Site.Params.enableCustomHTML }}
+  {{ partial "custom/above-footer" . }}
+{{ end }}
+
+<div class="footer">
+  <div class="contain">
+    <p>
+      <a href="#">{{ T "backToTop" }}</a>
+      <br>
+      {{ .Site.Params.description | markdownify }}
+    </p>
+    {{ if not .Site.Params.disableIncidentHistory }}
+      <hr>
+      <p class="hinted">
+        <small>
+          {{ T "rss" }} —
+          {{ with $.Site.Home.OutputFormats.Get "rss" }}
+            <a href="{{ .Permalink }}" class="no-underline">{{ T "toAllUpdates" }}</a>
+          {{ end }}
+          {{ if not .IsHome }}
+          {{ with .OutputFormats.Get "rss" }}
+            {{ T "or" }} <a href="{{ .Permalink }}" class="no-underline">{{ T "onlyThisFeed" }} ({{ $.Title }})</a>
+          {{ end }}
+          {{ end }}
+        </small>
+      </p>
+    {{ end }}
+  </div>
+</div>
+
+{{ if .Site.Params.enableCustomHTML }}
+  {{ partial "custom/below-footer" . }}
+{{ end }}
