@@ -12,16 +12,16 @@
     {{ if not .Site.Params.disableIncidentHistory }}
       <hr>
       <p class="hinted">
+        {{ with $.Site.Home.OutputFormats.Get "rss" }}
+          <a href="{{ .Permalink }}" class="no-underline"><i class="fa-solid fa-square-rss"></i> {{ T "rss" }} {{ T "toAllUpdates" }}</a>
+        {{ end }}
+        {{ if not .IsHome }}
+        {{ with .OutputFormats.Get "rss" }}
+          {{ T "or" }} <a href="{{ .Permalink }}" class="no-underline">{{ T "onlyThisFeed" }} ({{ $.Title }})</a>
+        {{ end }}
+        {{ end }}
         <small>
-          {{ T "rss" }} —
-          {{ with $.Site.Home.OutputFormats.Get "rss" }}
-            <a href="{{ .Permalink }}" class="no-underline">{{ T "toAllUpdates" }}</a>
-          {{ end }}
-          {{ if not .IsHome }}
-          {{ with .OutputFormats.Get "rss" }}
-            {{ T "or" }} <a href="{{ .Permalink }}" class="no-underline">{{ T "onlyThisFeed" }} ({{ $.Title }})</a>
-          {{ end }}
-          {{ end }}
+
         </small>
       </p>
     {{ end }}

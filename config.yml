@@ -10,30 +10,38 @@ params:
   categories:
     - name: Midwest
       description: The main servers are located here.
-      closed: true
+      closed: false
+    - name: East coast
+      description: The main servers are located here.
+      closed: false
+    - name: Cloudflare
+      description: Sites hosted on Cloudflare's servers
+      closed: false
 
   systems:
-    - name: Website
-      description: The default website for everything
-      category: Midwest
     - name: CDN
       description: Content delivey network
-      category: Midwest
+      category: East coast
+      link: https://cdn.ttnrtsite.me
     - name: TTGit
-      description: Git source control
-      category: Midwest
-    - name: Assist AI
-      description: Our AI assistant
-      category: Midwest
+      description: Git source control site
+      category: East coast
+      link: https://git.ttnrtsite.me
     - name: TTPages
       description: Static websites served from TTGit
       category: Midwest
+      link: https://ttnrtsite.io
     - name: API
       description: Access the TTNRT API
       category: Midwest
+      link: https://api.ttnrtsite.me
     - name: TTRadio
       description: Listen to music on Discord
       category: Midwest
+    - name: Website
+      description: Our main website for everything
+      category: Cloudflare
+      link: https://ttnrtsite.me
 
   dateFormat: January 2, 2006 at 3:04 PM UTC
   shortDateFormat: 15:04 UTC — Jan 2
@@ -75,14 +83,7 @@ outputs:
     - html
     - json
     - rss
-    - svg
   term:
     - html
     - json
     - rss
-    - svg
-
-outputFormats:
-  svg:
-    isPlainText: true
-    mediaType: image/svg+xml

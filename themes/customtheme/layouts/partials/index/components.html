@@ -25,7 +25,7 @@
       
       {{ with .description }}
         <span class="tooltip tooltip--small">
-          &nbsp; <span class="faded">(?)</span>
+          &nbsp; <span class="faded"><i class="fa-solid fa-circle-question"></i></span>
 
           <span class="tooltip__text">
             {{ . }}
@@ -57,7 +57,7 @@
 
           {{ with $system.description }}
             <span class="tooltip tooltip--small">
-              &nbsp; <span class="faded">(?)</span>
+              &nbsp; <span class="faded"><i class="fa-solid fa-circle-question"></i></span>
 
               <span class="tooltip__text">
                 {{ . }}
@@ -68,7 +68,7 @@
           {{ with $system.link }}
             <span class="span-icon">
               <a href="{{ . }}" class="link-style">
-                🔗
+                <i class="fa-solid fa-link"></i>
               </a>
             </span>
           {{ end }}
